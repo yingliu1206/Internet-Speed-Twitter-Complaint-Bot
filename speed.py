@@ -47,7 +47,10 @@ class InternetSpeedTwitterBot:
         # draft the tweet
         time.sleep(3)
         element = self.driver.find_element(By.XPATH, '//*[@id="react-root"]/div/div/div[2]/main/div/div/div/div/div/div[3]/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div/div/div/div/div/div[1]/div/div/div/div/div/div/div/div')
-        element.send_keys(f'Hey Verizon, why is my home internet speed {self.down} down/{self.up} up?')
+        element.send_keys(f'''
+                            Hey Verizon, why is my internet so slow? 😡 
+                            📶 Download Speed: {self.down} 
+                            📤 Upload Speed: {self.up}
+                            ''')
 
-
-
+#SlowInternet #Complaint #SpeedTest
